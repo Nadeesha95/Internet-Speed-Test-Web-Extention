@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Internet Speed Test",
+    "version": "1.0",
+    "description": "Quickly assess your internet connection's speed with just a click using our convenient web extension",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "img/17.png",
+        "48": "img/48.png",
+        "128": "img/128.png"
+    }
+    },
+    "permissions": ["activeTab"],
+    "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": ["js/content.js"]
+    }]
+  }
